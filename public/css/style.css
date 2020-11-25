@@ -18,7 +18,20 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	background: var(--light-color);
-	margin: 20px;
+}
+
+#particles-js{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+#paarticles-js canvas{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
 ul {
@@ -60,7 +73,7 @@ a {
 
 .chat-main {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1.2fr 2.8fr;
 }
 
 .chat-sidebar {
@@ -129,9 +142,43 @@ a {
 
 /* Join Page */
 .join-container {
-	max-width: 500px;
+	max-width: 1000px;
 	margin: 80px auto;
 	color: #fff;
+}
+
+.join-text {
+	max-width: 1000px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+}
+
+@media all and (min-width: 0px) {
+	#join-text {
+		-webkit-animation: tvflicker .2s infinite alternate;
+		-moz-animation:    tvflicker .5s infinite alternate;
+		-o-animation:      tvflicker .5s infinite alternate;
+		animation:         tvflicker .5s infinite alternate;
+	}
+
+	@-webkit-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+	  100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+	}
+	@-moz-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@-o-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
 }
 
 .join-header {
@@ -179,12 +226,5 @@ a {
 	width: 100%;
 }
 
-@media (max-width: 700px) {
-	.chat-main {
-		display: block;
-	}
 
-	.chat-sidebar {
-		display: none;
-	}
-}
+

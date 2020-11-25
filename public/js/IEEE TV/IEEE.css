@@ -1,0 +1,208 @@
+body{
+  padding-top:100px;
+  background-image: url(bg3.jpg);
+  background-repeat:no-repeat;
+}
+#header{
+  font-size:100px;
+  color:#fff;
+  float:none;
+  text-align:center;
+  display:fixed;
+  border-bottom-style:solid;
+  border-bottom-color:#fff;
+  border-bottom-width:5px;
+  margin-bottom:10px;
+  font-family:Pacifico,cursive
+}
+#particles-js{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-image:url("");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:50% 50%;
+  z-index: -10;
+}
+.insta-responsive{
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+}
+body{
+  width:600px;
+  margin:32px auto;
+  text-align:center
+}
+#monitor {
+	position: relative;
+	border-top: 3px solid #888; 
+	margin: 5%;
+	padding: 2% 2% 4% 2%;
+	border-radius: 10px;
+	border-bottom-left-radius: 50% 2%;
+	border-bottom-right-radius: 50% 2%; 
+  transition: margin-right 1s;
+}
+
+#monitor:after {
+	content: '';
+	position: absolute;
+	bottom: 3%;
+	left: 36%;
+	height: .5%; 
+	width: 28%;
+	background: #ddd; 
+	border-radius: 50%; 
+	box-shadow: 0 0 3px 0 white;
+}
+
+#monitorscreen {
+	position: absolute;
+  background-color: #66FCF1;
+	background-size: cover; 
+	background-position: top center;
+	height: 0; 
+	padding-bottom: 56.25%; 
+	position: relative;
+	overflow: hidden;
+}
+
+
+@media all and (min-width: 960px) {
+	#monitor {
+		-webkit-animation: tvflicker .2s infinite alternate; 
+		-moz-animation:    tvflicker .5s infinite alternate; 
+		-o-animation:      tvflicker .5s infinite alternate; 
+		animation:         tvflicker .5s infinite alternate; 
+	}
+
+	@-webkit-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+	  100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+	}
+	@-moz-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@-o-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+}
+figure{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  width:100%
+}
+svg{
+  padding:0;
+  width:300px
+}
+svg>*{
+  fill:#1c1c1c;
+  stroke:#1c1c1c;
+  stroke-width:.85px
+}
+
+
+#one{
+  padding-bottom:25px;
+  font-size: ;
+}
+.box bounce5 iframe{
+   max-width: 100px !important;
+}
+
+#particles-js canvas {
+   display: block;
+   vertical-align: bottom;
+   -webkit-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   opacity: 1;
+   -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+   transition: opacity .8s ease, transform 1.4s ease;
+   align-content: center;
+}
+#container {
+  max-width: 512px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box-wrap{
+  align-items:center;
+  justify-content:center;
+  margin: 30px;
+}
+.box{
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  transition:.2s all;
+}
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+
+
+.animated {
+  background-image: url(/css/images/logo.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top:95px;
+  margin-bottom:60px;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
